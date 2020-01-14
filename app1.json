@@ -1,0 +1,20 @@
+{
+    "AppCode": "App1",
+    "Version": "v1",
+    "FeatureFlags" : [
+      {
+        "featureFlag": "ER",
+        "featureFlagValue": {
+          "value": false,
+          "criteria": [
+            {
+              "condition": ">=",
+              "controlName": "version",
+              "controlValue": "8.0.0"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

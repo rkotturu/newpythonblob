@@ -43,7 +43,7 @@ from azure.storage.blob import BlockBlobService, PublicAccess
 def run_sample():
     try:
         # Create the BlockBlockService that is used to call the Blob service for the storage account
-        block_blob_service = BlockBlobService(account_name='meetpythonstorage', account_key='duOguiKnYb6ZEbJC6BftWqA2lcH67dWkmCSEJj+KxOTOHCNPeV7r4oO6feTw7gSSoFGKHryL4yqSVWlEkm6jWg==')
+        block_blob_service = BlockBlobService(account_name='terrastatefile', account_key='P4D8mPNPRUsB1SJuQkWBjtDndh12GAZA8KuWvT4SMfqx3rf/3bifpTeoNkU9mp4GxZL2BiDdBYxAh0+lfUOBVA==')
 
         # Create a container called 'quickstartblobs'.
         container_name ='quickstartblobs'
@@ -63,7 +63,7 @@ def run_sample():
         #file.close()
 
         print("Temp file = " + full_path_to_file)
-        print("\nUploading to Blob storage as blob" + local_file_name)
+        print("\nUploading to Blob storage as blob " + local_file_name)
 
         # Upload the created file, use local_file_name for the blob name
         block_blob_service.create_blob_from_path(container_name, local_file_name, full_path_to_file)
